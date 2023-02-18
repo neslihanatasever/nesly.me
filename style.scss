@@ -74,8 +74,10 @@ header {
     }
     .btns {
         width: 100%;
+        margin-top: 20px;
+        margin-left: -10px;
 
-        button {
+         a {
             color: $first-color;
             outline: none;
             border: none;
@@ -83,11 +85,12 @@ header {
             font-size: 16px;
             font-weight: 400;
             padding: 8px 14px;
-            margin: 40px 5px;
+            margin: 40px 10px;
             letter-spacing: 2px;
             text-transform: capitalize;
             box-shadow: 0 5px 15px rgba(211, 208, 208, 0.4);
             border-radius: 20px;
+            text-decoration: none;
         }
     }
 }
