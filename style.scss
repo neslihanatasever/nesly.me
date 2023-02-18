@@ -34,6 +34,7 @@ header {
             text-decoration: none;
             border-radius: 60px;
             color: $first-color;
+            text-shadow: 2px 2px 10px black;
         }
     
     }
@@ -62,6 +63,7 @@ header {
         font-size: 3em;
         font-weight: 900;
         color: $second-color;
+        text-shadow: 2px 2px 10px rgb(139, 39, 134);
     }
     p {
         display: block;
@@ -109,13 +111,24 @@ header {
     justify-content: center;
     align-items: center;
     position: relative;
-
+    
+    h4 {
+        text-align: center;
+        margin: 20px;
+        font-size: 30px;
+        position: relative;
+        top: 200px;
+        color: $second-color;
+        text-shadow: 2px 2px 10px black;
+    }
 
     i {
+        text-align: center;
         margin: 20px;
         font-size: 50px;
         position: relative;
-        top: 250px;
+        top: 200px;
+        color: $second-color;
     }
 }
 
@@ -127,6 +140,7 @@ header {
         left: 0;
         bottom: 0;
         text-align: center;
+        color: $second-color;
     }
 
 }
