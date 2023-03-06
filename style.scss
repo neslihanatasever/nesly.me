@@ -10,13 +10,73 @@ $four-color: #782d8693;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: $primary-color;
 }
 
 body {
-    overflow: hidden;
-    font-family: $font-stack;
+    overflow: auto;
+    background-image: url('https://i.redd.it/xkf172gprql41.jpg');
+    background-size:cover;
+    background-position:center;
+
 }
+.flex {
+    display:flex;
+    justify-content:center;
+    flex-direction: column;
+  }
+  
+  p {
+    font-weight:lighter;
+    font-size:0.9em;
+    line-height:1.4em;
+    text-align: center;
+  }
+  
+  h1, h4 {
+    margin-top:0px;
+    text-align: center;
+  }
+  
+  /* glass-block */
+  
+  .glass-block {
+    position: relative;
+    left: 400px;
+    width: 855px;
+    height: 300px;
+    margin: 20px;
+    margin-top: 70px;
+    padding: 30px;
+    box-sizing: border-box;
+    color: $second-color;
+
+   
+
+    i {
+        text-align: center;
+        margin: 20px;
+        font-size: 50px;
+        position: relative;
+        left: 220px;
+        top: 50px;
+        color: $second-color;
+    }
+  }
+  
+  .glass-block {
+    background-color: rgba(255,255,255,0.2);
+    border-radius:20px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
+    backdrop-filter: blur(10px) saturate(150%);
+    border:1px solid rgba(0,0,0,0.2);
+    transition:all 0.6s;
+  }
+  .glass-block:hover {
+    backdrop-filter: blur(3px) saturate(200%); 
+    transition:all 0.6s;
+    box-shadow: 0px 0px 14px rgba(0,0,0,0.7);
+  }
+
 
 header {
     height: 100%;
@@ -107,6 +167,7 @@ header {
         left: 150px;
     }
 }
+
 
 .contact {
     width: 100%;
