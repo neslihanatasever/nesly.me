@@ -18,10 +18,11 @@ body {
 }
 
 p {
-  font-weight: lighter;
-  font-size: 0.9em;
+  font-weight: bold;
+  font-size: 18px;
   line-height: 1.4em;
   text-align: center;
+  margin-top: 15px;
 }
 
 h1, h4 {
@@ -33,21 +34,21 @@ h1, h4 {
 .glass-block {
   position: relative;
   left: 400px;
-  width: 855px;
-  height: 300px;
+  width: 905px;
+  height: 400px;
   margin: 20px;
   margin-top: 70px;
   padding: 30px;
   box-sizing: border-box;
   color: #414346;
 }
-.glass-block i {
+.glass-block i, .glass-block a {
   text-align: center;
   margin: 20px;
   font-size: 50px;
   position: relative;
-  left: 220px;
-  top: 50px;
+  left: 70px;
+  top: 10px;
   color: #414346;
 }
 
@@ -66,6 +67,26 @@ h1, h4 {
           backdrop-filter: blur(3px) saturate(200%);
   transition: all 0.6s;
   box-shadow: 0px 0px 14px rgba(0, 0, 0, 0.7);
+}
+
+.btns {
+  width: 100%;
+  margin-top: 120px;
+}
+.btns a {
+  color: #393e46;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 8px 14px;
+  margin: 40px 10px;
+  letter-spacing: 2px;
+  text-transform: capitalize;
+  box-shadow: 0 5px 15px rgba(26, 25, 25, 0.74);
+  border-radius: 20px;
+  text-decoration: none;
 }
 
 header {
@@ -118,26 +139,6 @@ header .header-items a {
   font-size: 1.2em;
   color: rgba(88, 5, 136, 0.631372549);
 }
-.wrapper .btns {
-  width: 100%;
-  margin-top: 20px;
-  margin-left: -10px;
-}
-.wrapper .btns a {
-  color: #393e46;
-  outline: none;
-  border: none;
-  cursor: pointer;
-  font-size: 16px;
-  font-weight: 400;
-  padding: 8px 14px;
-  margin: 40px 10px;
-  letter-spacing: 2px;
-  text-transform: capitalize;
-  box-shadow: 0 5px 15px rgba(211, 208, 208, 0.4);
-  border-radius: 20px;
-  text-decoration: none;
-}
 
 .imgbox {
   position: relative;
@@ -168,7 +169,7 @@ header .header-items a {
   color: #414346;
   text-shadow: 2px 2px 10px black;
 }
-.contact i {
+.contact i, .contact a {
   text-align: center;
   margin: 20px;
   font-size: 50px;
@@ -177,12 +178,14 @@ header .header-items a {
   color: #414346;
 }
 
+.mail {
+  margin-top: 50px;
+}
 .mail h4 {
   width: 100%;
   height: 100px;
   position: fixed;
   left: 0;
-  bottom: 0;
   text-align: center;
   color: #414346;
 }
